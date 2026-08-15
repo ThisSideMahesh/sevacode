@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/main_content" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/factor_mdpi_10_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/detail_backdrop_height">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?colorPrimary" app:expandedTitleMarginEnd="64.0dp" app:expandedTitleMarginStart="48.0dp" app:expandedTitleTextAppearance="@android:color/transparent" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/backdrop" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/test_group" android:scaleType="fitXY" app:layout_collapseMode="parallax" />
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/detail_text_scrool" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shriyantra" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.widget.RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:id="@id/cv_slider_mainActivity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:layout_alignParentTop="true">
+                <com.dp.sgp.autoimageslider.SliderView android:id="@id/imageSlider" android:layout_width="match_parent" android:layout_height="200.0dp" app:sliderAnimationDuration="600" app:sliderAutoCycleDirection="back_and_forth" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorEnabled="true" app:sliderIndicatorGravity="center|bottom" app:sliderIndicatorMargin="15.0dp" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dp" app:sliderIndicatorRadius="2.0dp" app:sliderIndicatorSelectedColor="@color/colorPrimaryDark" app:sliderIndicatorUnselectedColor="@color/iron" app:sliderScrollTimeInSec="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="6.0dp" android:layout_below="@id/cv_slider_mainActivity">
+                <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_02_dp" android:layout_marginRight="@dimen/factor_mdpi_02_dp">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <TextView android:textColor="@color/colorPrimaryDark" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="सर्वात लोकप्रिय" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/viewParent.headerText" />
+                            <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txt_lokpriya_view" android:text="संपुर्ण पहा >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/viewParent" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_weight="1.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag1" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title1" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main1" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_lokpriya" android:layout_width="match_parent" android:layout_height="150.0dp" android:divider="@null" app:reverseLayout="true" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <TextView android:textColor="@color/colorPrimaryDark" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="पूजा साहित्य" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/viewParent.headerText" />
+                            <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txt_pooja_view" android:text="संपुर्ण पहा >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/viewParent" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_weight="1.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag2" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title2" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main2" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag3" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title3" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main3" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_pooja_sahitya" android:layout_width="match_parent" android:layout_height="150.0dp" android:divider="@null" app:reverseLayout="true" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <TextView android:textColor="@color/colorPrimaryDark" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="ग्रंथ साहित्य" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/viewParent.headerText" />
+                            <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txt_grantha_view" android:text="संपुर्ण पहा >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/viewParent" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_grantha_sahitya" android:layout_width="match_parent" android:layout_height="150.0dp" android:divider="@null" app:reverseLayout="true" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <TextView android:textColor="@color/colorPrimaryDark" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="आयुर्वेदिक उत्पादने" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/viewParent.headerText" />
+                            <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txt_aurvedh_view" android:text="संपुर्ण पहा >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/viewParent" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_weight="1.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag4" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title4" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main4" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag8" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title8" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main8" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_aaruvedh_utpadan" android:layout_width="match_parent" android:layout_height="150.0dp" android:divider="@null" app:reverseLayout="true" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <TextView android:textColor="@color/colorPrimaryDark" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="कृषी उत्पादने" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/viewParent.headerText" />
+                            <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@id/txt_krishi_view" android:text="संपुर्ण पहा >>" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/viewParent" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp">
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_weight="1.0">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main5" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag5" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title5" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main5" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <FrameLayout android:layout_gravity="center" android:id="@id/image_main6" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag6" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+                                        </FrameLayout>
+                                        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title6" android:background="@color/white" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/image_main6" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_krishi_dhan" android:layout_width="match_parent" android:layout_height="150.0dp" android:divider="@null" app:reverseLayout="true" />
+                        </LinearLayout>
+                        <GridView android:gravity="center" android:id="@id/grid_view_image_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:numColumns="2" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+        </android.widget.RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

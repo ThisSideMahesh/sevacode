@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/layCard" android:layout_width="wrap_content" android:layout_height="100.0dp" app:cardCornerRadius="26.0dp" app:cardElevation="6.0dp" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_10_dp">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/tab_indicator_gray" android:gravity="left" android:id="@id/txt_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_15_dp" android:layout_marginTop="@dimen/factor_mdpi_02_dp" android:text="Hello" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="right" android:id="@id/txt_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_15_dp" android:layout_marginTop="5.0dp" android:layout_marginRight="15.0dp" android:text="Monish" android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24_for" android:drawablePadding="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/image_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/title_lag" android:layout_width="wrap_content" android:layout_height="100.0dp" android:src="@drawable/card_dattdham" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:background="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="English" android:singleLine="true" android:layout_below="@id/image_main" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

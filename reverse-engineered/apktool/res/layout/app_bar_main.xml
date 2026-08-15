@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_main" />
+    <android.support.design.widget.BottomNavigationView android:layout_gravity="bottom" android:id="@id/navigation" android:background="?android:windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" app:elevation="10.0dp" app:itemBackground="@color/bottomNavigationBackground" app:itemIconTint="@color/bottom_navigation_color" app:itemTextColor="@color/bottom_navigation_color" app:labelVisibilityMode="labeled" app:menu="@menu/master_bottom_navigation" />
+</android.support.design.widget.CoordinatorLayout>

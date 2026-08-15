@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/parent.contentLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/factor_mdpi_55_dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

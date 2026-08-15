@@ -1,0 +1,14 @@
+.class synthetic Lcom/dp/sgp/lovelydialog/LovelyChoiceDialog$1;
+.super Ljava/lang/Object;
+.source "LovelyChoiceDialog.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dp/sgp/lovelydialog/LovelyChoiceDialog;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

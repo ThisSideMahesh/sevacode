@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lyt_header" android:background="@color/colorPrimaryDark" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/panelIconLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/img_prev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/colorAccent" android:ellipsize="marquee" android:gravity="center" android:id="@id/txtHeading" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="Date" android:singleLine="true" android:layout_toLeftOf="@id/panelIconRight" android:layout_toRightOf="@id/panelIconLeft" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/poppins_regular" />
+    <LinearLayout android:id="@id/panelIconRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/img_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_arrow_forward_24" />
+    </LinearLayout>
+</RelativeLayout>

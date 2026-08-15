@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/black_custom_tab_footer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lyt_header" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_10_dp" android:layout_marginTop="@dimen/factor_mdpi_05_dp" android:layout_marginRight="@dimen/factor_mdpi_10_dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:id="@id/panelIconLeftreversemain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_marginLeft="@dimen/factor_mdpi_10_dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_Home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrowheads" android:tint="@color/colorPrimaryDark" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/lytHeadingmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:drawableLeft="@drawable/ic_baseline_bookmark_24" android:drawablePadding="@dimen/factor_mdpi_05_dp" android:layout_toLeftOf="@id/panelIconRightmain" android:layout_toRightOf="@id/panelIconLeftreversemain" android:layout_centerInParent="true" android:fontFamily="@font/poppins_medium">
+            <TextView android:textSize="@dimen/font_extralarge_18" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="Previous and Next" android:singleLine="true" android:drawableLeft="@drawable/ic_baseline_bookmark_24" android:drawablePadding="@dimen/factor_mdpi_05_dp" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelIconRightmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_Overflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fast_forward" android:tint="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

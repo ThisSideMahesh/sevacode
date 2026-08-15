@@ -1,0 +1,43 @@
+package com.dp.sgp.autoimageslider.IndicatorView.animation.data.type;
+
+import com.dp.sgp.autoimageslider.IndicatorView.animation.data.Value;
+
+/* JADX INFO: loaded from: classes.dex */
+public class FillAnimationValue extends ColorAnimationValue implements Value {
+    private int radius;
+    private int radiusReverse;
+    private int stroke;
+    private int strokeReverse;
+
+    public int getRadius() {
+        return this.radius;
+    }
+
+    public void setRadius(int i) {
+        this.radius = i;
+    }
+
+    public int getRadiusReverse() {
+        return this.radiusReverse;
+    }
+
+    public void setRadiusReverse(int i) {
+        this.radiusReverse = i;
+    }
+
+    public int getStroke() {
+        return this.stroke;
+    }
+
+    public void setStroke(int i) {
+        this.stroke = i;
+    }
+
+    public int getStrokeReverse() {
+        return this.strokeReverse;
+    }
+
+    public void setStrokeReverse(int i) {
+        this.strokeReverse = i;
+    }
+}

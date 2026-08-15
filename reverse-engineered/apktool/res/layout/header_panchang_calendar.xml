@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_alignParentTop="true" app:cardBackgroundColor="@color/calbg" app:cardCornerRadius="16.0dp" app:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_02_dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/font_small_12" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="पंचांग :" android:layout_weight="7.0" />
+                    <TextView android:textSize="@dimen/font_small_12" android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tv_panchangs_title" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="पंचांग" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_02_dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="तिथी :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvTithi" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="तिथी" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="वार :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvVar" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="वार" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/factor_mdpi_02_dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_02_dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="भाद्रपद :" android:layout_weight="1.0" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tv_bhadrapad" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="भाद्रपद" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="कृष्णपक्ष :" android:layout_weight="1.0" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tv_krishnakunj" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="कृष्णपक्ष" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_02_dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="नक्षत्र :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvNakshatra" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="नक्षत्र" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="राहुकाळ :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvRahukal" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="राहुकाळ" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_02_dp" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="शुभाशुभ :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvShubhaShubh" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="शुभारंभ" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="दिनविशेष :" android:layout_weight="2.5" />
+                    <TextView android:textStyle="bold" android:textColor="@color/opacolorPrimaryDark" android:id="@id/tvDaySpecial" android:padding="@dimen/factor_mdpi_02_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="दिंविशेष" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_small_12" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center_vertical" android:id="@id/tv_ashle" android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="आश्ले" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_small_12" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center_vertical" android:id="@id/tv_datetime" android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="सकाळी ९.00 ते १२.00" android:layout_weight="1.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

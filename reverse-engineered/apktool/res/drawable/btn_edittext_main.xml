@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/inputmBg" />
+                    <stroke android:width="1.0dp" android:color="@color/inputmBg" />
+                    <corners android:radius="4.0dp" />
+                    <padding android:left="3.0dp" android:top="3.0dp" android:right="3.0dp" android:bottom="3.0dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

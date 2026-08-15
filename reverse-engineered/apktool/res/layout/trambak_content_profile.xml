@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="20.0dp">
+        <TextView android:layout_marginBottom="20.0dp" android:text="@string/nashik_header" style="@style/headerText" />
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView android:id="@id/mobileImageView" android:src="@drawable/ic_baseline_smartphone_24" style="@style/profileDetailsImage" />
+            <TextView android:text="Mobile" android:layout_toRightOf="@id/mobileImageView" style="@style/profileDetailsTextMain" />
+            <TextView android:text="@string/nashik_phone" android:layout_toRightOf="@id/mobileImageView" style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView android:id="@id/emailImageView" android:src="@drawable/ic_baseline_email_24" style="@style/profileDetailsImage" />
+            <TextView android:text="Email" android:layout_toRightOf="@id/emailImageView" style="@style/profileDetailsTextMain" />
+            <TextView android:text="@string/nashik_email" android:layout_toRightOf="@id/emailImageView" style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView android:id="@id/addressImageView" android:src="@drawable/ic_baseline_my_location_24" style="@style/profileDetailsImage" />
+            <TextView android:text="Address" android:layout_toRightOf="@id/addressImageView" style="@style/profileDetailsTextMain" />
+            <TextView android:textSize="@dimen/font_medium_14" android:textColor="@color/blackTextColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_20" android:text="@string/nashik_address" android:layout_toRightOf="@id/addressImageView" />
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

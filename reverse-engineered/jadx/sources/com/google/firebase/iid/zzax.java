@@ -1,0 +1,64 @@
+package com.google.firebase.iid;
+
+import android.text.TextUtils;
+import android.util.Log;
+import com.dp.sgp.Constants.Key;
+import java.util.concurrent.TimeUnit;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* JADX INFO: loaded from: classes.dex */
+final class zzax {
+    private static final long zzdf = TimeUnit.DAYS.toMillis(7);
+    private final long timestamp;
+    final String zzbq;
+    private final String zzdg;
+
+    private zzax(String str, String str2, long j) {
+        this.zzbq = str;
+        this.zzdg = str2;
+        this.timestamp = j;
+    }
+
+    static zzax zzi(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return null;
+        }
+        if (str.startsWith("{")) {
+            try {
+                JSONObject jSONObject = new JSONObject(str);
+                return new zzax(jSONObject.getString(Key.TOKEN), jSONObject.getString("appVersion"), jSONObject.getLong("timestamp"));
+            } catch (JSONException e) {
+                String strValueOf = String.valueOf(e);
+                Log.w("FirebaseInstanceId", new StringBuilder(String.valueOf(strValueOf).length() + 23).append("Failed to parse token: ").append(strValueOf).toString());
+                return null;
+            }
+        }
+        return new zzax(str, null, 0L);
+    }
+
+    static String zza(String str, String str2, long j) {
+        try {
+            JSONObject jSONObject = new JSONObject();
+            jSONObject.put(Key.TOKEN, str);
+            jSONObject.put("appVersion", str2);
+            jSONObject.put("timestamp", j);
+            return jSONObject.toString();
+        } catch (JSONException e) {
+            String strValueOf = String.valueOf(e);
+            Log.w("FirebaseInstanceId", new StringBuilder(String.valueOf(strValueOf).length() + 24).append("Failed to encode token: ").append(strValueOf).toString());
+            return null;
+        }
+    }
+
+    static String zza(zzax zzaxVar) {
+        if (zzaxVar == null) {
+            return null;
+        }
+        return zzaxVar.zzbq;
+    }
+
+    final boolean zzj(String str) {
+        return System.currentTimeMillis() > this.timestamp + zzdf || !str.equals(this.zzdg);
+    }
+}

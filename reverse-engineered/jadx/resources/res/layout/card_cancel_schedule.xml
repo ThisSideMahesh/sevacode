@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_online_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="@dimen/factor_mdpi_90_dp"
+        app:cardBackgroundColor="@color/whiteBodyColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/lyt_BatchCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:paddingRight="@dimen/factor_mdpi_05_dp"
+                android:layout_marginRight="@dimen/factor_mdpi_05_dp"
+                android:text="श्री स्वामी चरित्र सारामृत - ऑनलाईन"
+                style="@style/viewParent.headerText"/>
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/factor_mdpi_05_dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/factor_mdpi_05_dp"
+                android:text="ऑनलाइन मोडमध्ये कार्य करेल सर्व्हरच्या बाजूला रेकॉर्ड सेव्ह होनार"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:layout_width="@dimen/factor_mdpi_70_dp"
+        android:layout_height="@dimen/factor_mdpi_70_dp"
+        android:src="@drawable/bg_btn_welcome"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

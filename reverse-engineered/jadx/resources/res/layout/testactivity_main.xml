@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/mobile_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:layout_toRightOf="@+id/ccp"
+        android:layout_centerVertical="true"
+        android:inputType="number"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_toEndOf="@+id/ccp"
+        style="@style/EditTextStyle"/>
+    <ImageView
+        android:id="@+id/ccp"
+        android:layout_width="@dimen/factor_mdpi_35_dp"
+        android:layout_height="@dimen/factor_mdpi_35_dp"
+        android:src="@drawable/in_flag"/>
+</RelativeLayout>

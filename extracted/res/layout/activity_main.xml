@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/app_bar_main" />
+    <android.support.design.widget.NavigationView android:layout_gravity="start" android:id="@id/nav_view" android:background="@color/colorPrimaryDark" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="match_parent" app:itemIconSize="@dimen/factor_mdpi_20_dp" app:itemIconTint="@color/white" app:itemTextAppearanceActive="@style/BottomNavigationView.Active" app:itemTextAppearanceInactive="@style/BottomNavigationView" app:itemTextColor="@color/white" app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,205 @@
+.class public Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;
+.super Landroid/support/v7/app/AppCompatActivity;
+.source "YoutubeWebviewActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$MyChrome;,
+        Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$Browser_home;
+    }
+.end annotation
+
+
+# instance fields
+.field private progressBar:Landroid/view/View;
+
+.field private url:Ljava/lang/String;
+
+.field private webView:Landroid/webkit/WebView;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 20
+    invoke-direct {p0}, Landroid/support/v7/app/AppCompatActivity;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;)V
+    .locals 0
+
+    .line 20
+    invoke-direct {p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->loadWebsite()V
+
+    return-void
+.end method
+
+.method private loadWebsite()V
+    .locals 2
+
+    .line 68
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    iget-object v1, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->url:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onBackPressed()V
+    .locals 0
+
+    .line 153
+    invoke-virtual {p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->finish()V
+
+    return-void
+.end method
+
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 0
+
+    .line 135
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+
+    return-void
+.end method
+
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 2
+
+    .line 26
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
+
+    const v0, 0x7f0d0042
+
+    .line 28
+    invoke-virtual {p0, v0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->setContentView(I)V
+
+    .line 30
+    invoke-virtual {p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const-string v1, "media_url"
+
+    .line 33
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->url:Ljava/lang/String;
+
+    const-string v1, "URL URL"
+
+    .line 34
+    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const v0, 0x7f0a0269
+
+    .line 37
+    invoke-virtual {p0, v0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/webkit/WebView;
+
+    iput-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    const v0, 0x7f0a0155
+
+    .line 38
+    invoke-virtual {p0, v0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->progressBar:Landroid/view/View;
+
+    .line 40
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    new-instance v1, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$Browser_home;
+
+    invoke-direct {v1, p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$Browser_home;-><init>(Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;)V
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
+
+    .line 41
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    new-instance v1, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$MyChrome;
+
+    invoke-direct {v1, p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$MyChrome;-><init>(Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;)V
+
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
+
+    .line 42
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    .line 43
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+
+    .line 44
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+
+    .line 45
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
+
+    if-nez p1, :cond_1
+
+    .line 49
+    iget-object p1, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    new-instance v0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$1;
+
+    invoke-direct {v0, p0}, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity$1;-><init>(Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;)V
+
+    invoke-virtual {p1, v0}, Landroid/webkit/WebView;->post(Ljava/lang/Runnable;)Z
+
+    :cond_1
+    return-void
+.end method
+
+.method protected onRestoreInstanceState(Landroid/os/Bundle;)V
+    .locals 1
+
+    .line 146
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
+
+    .line 147
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->restoreState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
+
+    return-void
+.end method
+
+.method protected onSaveInstanceState(Landroid/os/Bundle;)V
+    .locals 1
+
+    .line 140
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
+
+    .line 141
+    iget-object v0, p0, Lcom/dp/sgp/View/Activity/Youtube/YoutubeWebviewActivity;->webView:Landroid/webkit/WebView;
+
+    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->saveState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
+
+    return-void
+.end method

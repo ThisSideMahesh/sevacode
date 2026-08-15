@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/nityaseva_child_selector" android:id="@id/navigationNityaseva" android:title="Nityaseva" />
+    <item android:icon="@drawable/upakram_child_selector" android:id="@id/navigationUpkram" android:title="Upkram" />
+    <item android:icon="@drawable/home_child_selector" android:id="@id/navigationMenu" android:title="Home" />
+    <item android:icon="@drawable/product_child_selector" android:id="@id/navigationProducts" android:title="Products" />
+    <item android:icon="@drawable/aboutus_child_selector" android:id="@id/navigationAboutUs" android:title="About us" />
+</menu>

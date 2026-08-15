@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/headerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/swami_charitra_header" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/footerView" android:layout_below="@id/headerView">
+        <include layout="@layout/new_swami_charitra_center" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/footerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/swami_charitra_footer" />
+    </LinearLayout>
+</RelativeLayout>

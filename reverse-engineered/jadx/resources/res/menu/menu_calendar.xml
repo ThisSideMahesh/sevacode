@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_muhrta_inactive"
+        android:id="@+id/menu_rahukal"
+        android:title="@string/lbl_rahukal"/>
+    <item
+        android:icon="@drawable/ic_muhrta_inactive"
+        android:id="@+id/menu_muhurt"
+        android:title="@string/lbl_muhurt"/>
+    <item
+        android:icon="@drawable/ic_utsav_inactive"
+        android:id="@+id/menu_utsav"
+        android:title="@string/utsav"/>
+    <item
+        android:icon="@drawable/ic_dindori_inactive"
+        android:id="@+id/menu_dindori"
+        android:title="@string/dindori"/>
+    <item
+        android:icon="@drawable/ic_shubh_ashubh_inactive"
+        android:id="@+id/menu_shubh"
+        android:title="@string/lbl_shubhshubh"/>
+</menu>

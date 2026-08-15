@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlRoot" android:background="@drawable/rounded_rect_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small">
+        <TextView android:textSize="17.0dp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvName" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:maxLines="2" android:layout_centerVertical="true" />
+        <ImageView android:textSize="17.0dp" android:textColor="@color/textColor" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tvStatus" android:background="@drawable/rounded_rect_shadow" android:layout_width="130.0dp" android:layout_height="40.0dp" android:src="@drawable/not_started" android:minWidth="140.0dp" android:text="अध्याय १" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

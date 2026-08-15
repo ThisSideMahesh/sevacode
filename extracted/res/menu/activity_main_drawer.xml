@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_ic_home_filled" android:id="@id/nav_mainhome" android:title="Home" />
+        <item android:icon="@drawable/nav_shrisawmi" android:id="@id/nav_home" android:title="श्री स्वामी समर्थ सेवा मार्ग (दिंडोरी प्रणित)" />
+        <item android:icon="@drawable/nav_gurupith" android:id="@id/nav_My_Courses" android:title="श्री गुरुपीठ, त्र्यंबकेश्वर" />
+        <item android:icon="@drawable/nav_gurupranali" android:id="@id/nav_My_Assesment" android:title="गुरुप्रणाली" />
+        <item android:icon="@drawable/nav_charatble" android:id="@id/nav_Audio_Video" android:visible="false" android:title="चॅरीटेबल हॉस्पिटल व डोनेशन" />
+        <item android:icon="@drawable/nav_gram" android:id="@id/nav_Knowledge_Center" android:visible="false" android:title="ग्राम व नागरी विकास अभियान (उपक्रम)" />
+        <item android:icon="@drawable/nav_marga" android:id="@id/nav_Expression" android:title="मार्गदर्शिका" />
+        <item android:icon="@drawable/nav_abhja" android:id="@id/nav_Open_House" android:title="अब्ज चंडी सेवा नोंद" />
+        <item android:icon="@drawable/nav_youtube" android:id="@id/nav_Cooming_Soon" android:title="YouTube" />
+        <item android:icon="@drawable/nav_masaik" android:id="@id/nav_Survey" android:visible="false" android:title="मासिक व त्रैमासिक अंक" />
+        <item android:icon="@drawable/nav_aarati" android:id="@id/nav_Previous" android:title="आरती संग्रह" />
+        <item android:icon="@drawable/nav_nitryaseva" android:id="@id/nav_Performance" android:title="नित्यसेवा व स्तोत्र मंत्र" />
+        <item android:icon="@drawable/nav_charitra" android:id="@id/nav_Notification" android:title="श्री स्वामी चरित्र सारामृत" />
+        <item android:icon="@drawable/nav_jap" android:id="@id/nav_Profile" android:title="मंत्र जप" />
+        <item android:icon="@drawable/nav_varsan" android:id="@id/nav_sanvar" android:title="सण वार व्रत वैकल्ये" />
+        <item android:icon="@drawable/nav_prakashan" android:id="@id/nav_Prakashan" android:visible="false" android:title="प्रकाशन व ऑनलाईन साहित्य" />
+        <item android:icon="@drawable/ic_baseline_control_camera_24" android:id="@id/nav_Pooja_sahitya" android:visible="false" android:title="पूजा साहित्य" />
+        <item android:icon="@drawable/rice" android:id="@id/nav_krish" android:visible="false" android:title="कृषी" />
+        <item android:icon="@drawable/medicaequipment" android:id="@id/nav_aaurved" android:visible="false" android:title="आयुर्वेद - औषधे" />
+        <item android:icon="@drawable/ic_baseline_contact_mail_24" android:id="@id/nav_contact" android:title="संपर्क" />
+    </group>
+    <item android:title="">
+        <menu>
+            <item android:icon="@drawable/ic_baseline_power_settings_new_24" android:id="@id/nav_Logout" android:title="Logout" />
+        </menu>
+    </item>
+</menu>

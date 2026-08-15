@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shriyantra" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/rvArticles" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:foregroundGravity="center" android:overScrollMode="never" />
+    <GridView android:gravity="center" android:id="@id/grid_view_image_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:horizontalSpacing="0.0dp" android:verticalSpacing="0.0dp" android:stretchMode="columnWidth" android:numColumns="2" />
+</FrameLayout>

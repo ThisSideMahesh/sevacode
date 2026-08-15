@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/formBg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@id/rl_top" android:background="@drawable/toolbar_profile" android:layout_width="match_parent" android:layout_height="200.0dp" android:backgroundTint="@color/colorPrimaryDark">
+                <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textColor="@color/white" android:gravity="center" android:id="@id/notifation_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_30_dp" android:fontFamily="@font/poppins_regular" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="70.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="@dimen/factor_mdpi_20_dp">
+                <android.support.v7.widget.RecyclerView android:id="@id/rv_audio_video" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="0.0dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

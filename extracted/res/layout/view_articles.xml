@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="200.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl1" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleX="0.75" android:scaleY="0.75">
+        <LinearLayout android:background="@color/transperant" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:layout_width="100.0dp" android:layout_height="100.0dp" />
+                <TextView android:textSize="@dimen/font_medium_14" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/idTVCourse" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="@string/app_name" android:fontFamily="@font/poppins_regular" />
+                <TextView android:textSize="@dimen/factor_mdpi_10_dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/idTVCourse1" android:padding="@dimen/factor_mdpi_05_dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:text="10 files" android:fontFamily="@font/poppins_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout android:background="@color/formBg" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/cv_slider_mainActivity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6.0dp" android:layout_alignParentTop="true">
+        <com.dp.sgp.autoimageslider.SliderView android:id="@id/imageSlider" android:layout_width="match_parent" android:layout_height="180.0dp" app:sliderAnimationDuration="600" app:sliderAutoCycleDirection="back_and_forth" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorEnabled="true" app:sliderIndicatorGravity="center|bottom" app:sliderIndicatorMargin="15.0dp" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dp" app:sliderIndicatorRadius="3.0dp" app:sliderIndicatorSelectedColor="@color/colorPrimaryDark" app:sliderIndicatorUnselectedColor="@color/iron" app:sliderScrollTimeInSec="1" />
+    </LinearLayout>
+</android.widget.RelativeLayout>

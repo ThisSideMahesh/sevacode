@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="5.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/factor_mdpi_06_dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/factor_mdpi_10_dp" android:layout_marginRight="@dimen/factor_mdpi_10_dp" android:layout_weight="40.0">
+        <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="left" android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="श्री गुरुपीठ," android:fontFamily="@font/poppins_bold" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="left" android:padding="@dimen/factor_mdpi_05_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/factor_mdpi_15_dp" android:text="दिंडोरी प्रणीत सेवा मार्ग, दिनदर्शिका, अब्जचंडी सेवा नोंद, विविध सामाजिक उपक्रम,  दत्तधाम, सणवार उत्सव अजून बरेच काही…" android:fontFamily="@font/poppins_regular" />
+        <Button android:textColor="@color/colorPrimaryDark" android:id="@id/btn_Sign_in" android:background="@drawable/btn_border_gradient_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_15_dp" android:text="Sign In" android:fontFamily="@font/poppins_medium" />
+        <Button android:textColor="#fff" android:id="@id/btn_register" android:background="@drawable/btn_gradient_style" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_15_dp" android:text="Register" android:fontFamily="@font/poppins_medium" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="10.0dp" android:weightSum="100.0" android:layout_weight="50.0">
+        <ImageView android:id="@id/intro_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/im_four" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

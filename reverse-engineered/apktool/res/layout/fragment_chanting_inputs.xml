@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/yellow_backgroud" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-100.0dp" android:src="@drawable/swami_new" android:scaleType="centerCrop" android:layout_above="@id/ll" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll" android:background="@color/yellow_backgroud" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_small" android:layout_above="@id/bottom_shadow">
+        <include layout="@layout/title_view" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/blackTextColor" android:gravity="center_vertical" android:padding="@dimen/padding_small" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/count" android:drawableLeft="@drawable/ic_dot_chanting" android:drawablePadding="@dimen/padding_normal" android:layout_weight="1.2" />
+            <EditText android:id="@id/edtCount" android:background="@drawable/edittext_bg" android:padding="@dimen/padding_small" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="108" android:layout_weight="0.8" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/blackTextColor" android:gravity="center_vertical" android:padding="@dimen/padding_small" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/round" android:drawableLeft="@drawable/ic_dot_chanting" android:drawablePadding="@dimen/padding_normal" android:layout_weight="1.2" />
+            <EditText android:id="@id/edtRound" android:background="@drawable/edittext_bg" android:padding="@dimen/padding_small" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="11" android:layout_weight="0.8" android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/bottom_shadow" android:background="@drawable/bottom_shadow" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_above="@id/bottom_view" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_view" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:weightSum="5.0" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/trans_white" android:gravity="center" android:id="@id/tvAuto" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/auto" android:drawableTop="@drawable/ic_auto_inactive" android:layout_weight="1.0" />
+        <View android:background="@color/gray" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" />
+        <TextView android:textColor="@color/trans_white" android:gravity="center" android:id="@id/tvVibration" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/vibration" android:drawableTop="@drawable/ic_vibration_inactive" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/trans_white" android:gravity="center" android:id="@id/tvSound" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/sound" android:drawableTop="@drawable/ic_sound_inactive" android:layout_weight="1.0" />
+        <View android:background="@color/gray" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/padding_small" android:layout_marginBottom="@dimen/padding_small" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvHelp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/help" android:drawableTop="@drawable/ic_baseline_help_outline_24" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivPlay" android:background="@drawable/oval_bg_white" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

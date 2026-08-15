@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/lyt_mahcine_main" android:background="@color/formBg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/mask_group" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/factor_mdpi_10_dp" android:layout_below="@id/textView">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/factor_mdpi_10_dp">
+                <TextView android:textSize="24.0sp" android:textColor="@color/newgradient_end_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_15_dp" android:layout_marginTop="@dimen/factor_mdpi_02_dp" android:layout_marginRight="15.0dp" android:text="Hello" android:lineSpacingExtra="12.0dp" android:fontFamily="@font/poppins_thin" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/contentTextColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_15_dp" android:layout_marginTop="5.0dp" android:layout_marginRight="15.0dp" android:text="Monish" android:lineSpacingExtra="12.0dp" android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/tvMyArticle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/factor_mdpi_05_dp" android:layout_marginBottom="@dimen/factor_mdpi_05_dp">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/newgradient_end_color" android:gravity="center" android:id="@id/txt_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="आपली" android:drawableLeft="@drawable/ic_baseline_volume_up_24" android:drawablePadding="@dimen/factor_mdpi_10_dp" android:layout_centerVertical="true" android:fontFamily="@font/poppins_bold" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/txtSwipeRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="भाषा निवडा" android:layout_toRightOf="@id/txt_cat" android:layout_centerVertical="true" android:fontFamily="@font/poppins_regular" />
+                </RelativeLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/my_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/factor_mdpi_10_dp" android:layout_marginTop="@dimen/factor_mdpi_05_dp" android:layout_marginRight="@dimen/factor_mdpi_15_dp" android:layout_marginBottom="@dimen/factor_mdpi_15_dp" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aarati_titles">
+        <item>भूपाळी आरती</item>
+        <item>१.भूपाळी</item>
+        <item>२.श्री गणपतीची आरती</item>
+        <item>३.श्री स्वामी समर्थ महाराजांची आरती</item>
+        <item>४.श्री दत्तात्रेयांची आरती</item>
+        <item>१०.३० ची नैवेद्य आरती</item>
+        <item>१.श्री स्वामी समर्थ महाराजांची आरती</item>
+        <item>सायंकाळची नैवद्य आरती</item>
+        <item>१. श्री गणपतीची आरती</item>
+        <item>२. श्री स्वामी समर्थ महाराजांची आरती</item>
+        <item>३.श्री दत्तात्रेयांची आरती</item>
+        <item>४. श्री नारायणांची आरती</item>
+        <item>५. श्री गायत्री मातेची आरती</item>
+        <item>मंत्रपुष्पांजली</item>
+        <item>जयजयकार</item>
+        <item>श्री सद्गुरुनाथा प्रार्थना</item>
+        <item>श्री देवीची आरती</item>
+        <item>श्री शंकराची आरती</item>
+        <item>औदुंबर प्रदक्षिणा</item>
+    </string-array>
+    <string-array name="adhyay_titles">
+        <item>अध्याय १</item>
+        <item>अध्याय २</item>
+        <item>अध्याय ३</item>
+        <item>अध्याय ४</item>
+        <item>अध्याय ५</item>
+        <item>अध्याय ६</item>
+        <item>अध्याय ७</item>
+        <item>अध्याय ८</item>
+        <item>अध्याय ९</item>
+        <item>अध्याय १०</item>
+        <item>अध्याय ११</item>
+        <item>अध्याय १२</item>
+        <item>अध्याय १३</item>
+        <item>अध्याय १४</item>
+        <item>अध्याय १५</item>
+        <item>अध्याय १६</item>
+        <item>अध्याय १७</item>
+        <item>अध्याय १८</item>
+        <item>अध्याय १९</item>
+        <item>अध्याय २०</item>
+        <item>अध्याय २१</item>
+    </string-array>
+    <string-array name="day_marathi">
+        <item>१</item>
+        <item>२</item>
+        <item>३</item>
+        <item>४</item>
+        <item>५</item>
+        <item>६</item>
+        <item>७</item>
+        <item>८</item>
+        <item>९</item>
+        <item>१०</item>
+        <item>११</item>
+        <item>१२</item>
+        <item>१३</item>
+        <item>१४</item>
+        <item>१५</item>
+        <item>१६</item>
+        <item>१७</item>
+        <item>१८</item>
+        <item>१९</item>
+        <item>२०</item>
+        <item>२१</item>
+        <item>२२</item>
+        <item>२३</item>
+        <item>२४</item>
+        <item>२५</item>
+        <item>२६</item>
+        <item>२७</item>
+        <item>२८</item>
+        <item>२९</item>
+        <item>३०</item>
+        <item>३१</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>जानेवारी</item>
+        <item>फेब्रुवारी</item>
+        <item>मार्च</item>
+        <item>एप्रिल</item>
+        <item>मे</item>
+        <item>जून</item>
+        <item>जुलै</item>
+        <item>ऑगस्ट</item>
+        <item>सप्टेंबर</item>
+        <item>ऑक्टोबर</item>
+        <item>नोव्हेंबर</item>
+        <item>डिसेंबर</item>
+    </string-array>
+    <string-array name="stotra_titles">
+        <item>नित्यसेवा-मंत्र</item>
+        <item>श्री स्वामी स्तवन</item>
+        <item>श्री गणपती अथर्वशीर्ष</item>
+        <item>श्री गणेश स्तोत्र</item>
+        <item>श्री सुक्त</item>
+        <item>श्री पुरुष सुक्त</item>
+        <item>श्री रामरक्षा</item>
+        <item>नवग्रह स्तोत्र</item>
+        <item>कालभैरवाष्टक</item>
+        <item>मारुती स्तोत्र</item>
+        <item>प्रवास सुक्त</item>
+        <item>पर्जन्य सूक्त</item>
+        <item>प्रज्ञाविवर्धन स्तोत्र</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+    <string-array name="year_array_marathi">
+        <item>२०२१</item>
+        <item>२०२२</item>
+        <item>२०२३</item>
+    </string-array>
+</resources>

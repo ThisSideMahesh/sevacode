@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/MyAppBarLayoutTheme" android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="450.0dp">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?colorPrimary" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:titleEnabled="false">
+            <fragment android:name="com.google.android.gms.maps.MapFragment" android:id="@id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>

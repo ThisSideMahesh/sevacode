@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala1"/>
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala2"/>
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala3"/>
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala4"/>
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala5"/>
+    <item
+        android:duration="50"
+        android:drawable="@drawable/mala6"/>
+</animation-list>

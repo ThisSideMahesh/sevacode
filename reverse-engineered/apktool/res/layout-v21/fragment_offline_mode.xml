@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shriyantra" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:orientation="vertical" android:id="@id/lyt_mahcine_main" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/textView" android:background="@drawable/blackwhite_custom_tab_header" android:layout_width="match_parent" android:layout_height="170.0dp" android:src="@drawable/mask_group">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/factor_mdpi_15_dp" android:layout_weight="1.0">
+                    <CheckBox android:textSize="@dimen/text_16" android:textColor="@color/colorPrimaryDark" android:textColorHint="#afafaf" android:id="@id/edt_BlanksReceived" android:paddingLeft="20.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_margin="@dimen/factor_mdpi_05_dp" android:checked="true" android:text="अब्जचंडी सेवा अंतर्गत नोंद करा" android:singleLine="true" android:buttonTint="@color/colorPrimaryDark" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/groupradio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="4.0dp" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/colorPrimary" android:gravity="left" android:layout_gravity="left" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="एकूण पारायण " />
+                                <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/btn_lyt_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                                    <LinearLayout android:id="@id/thumbnail" android:background="@color/newlg_bg" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                                        <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pos" android:layout_width="match_parent" android:layout_height="match_parent" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:layout_marginTop="@dimen/factor_mdpi_02_dp" android:text="completed" android:layout_toRightOf="@id/thumbnail" android:layout_alignTop="@id/thumbnail" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0">
+                                <TextView android:textColor="@color/colorPrimary" android:gravity="left" android:layout_gravity="left" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="येथून सुरुवात करा " />
+                                <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/btn_lyt_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                                    <LinearLayout android:id="@id/thumbnail2" android:background="@color/newlg_bg" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                                        <TextView android:textSize="@dimen/factor_mdpi_15_dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_adhayay" android:layout_width="match_parent" android:layout_height="match_parent" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="@dimen/font_small_12" android:typeface="sans" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:layout_marginTop="@dimen/factor_mdpi_02_dp" android:text="अध्याय" android:layout_toRightOf="@id/thumbnail2" android:layout_alignTop="@id/thumbnail2" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/factor_mdpi_10_dp" android:layout_below="@id/textView">
+                <TextView android:textSize="18.0sp" android:textColor="@color/tab_indicator_gray" android:gravity="center" android:id="@id/txtSwipeRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="खलीलपैकी सेवेची निवड करा " android:layout_centerVertical="true" android:fontFamily="@font/poppins_medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView android:id="@id/my_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="@dimen/factor_mdpi_05_dp" android:layout_marginTop="@dimen/factor_mdpi_05_dp" android:layout_marginRight="@dimen/factor_mdpi_05_dp" android:layout_marginBottom="@dimen/factor_mdpi_05_dp" android:layout_weight="1.0" />
+                    <FrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_15_dp" android:layout_marginRight="@dimen/factor_mdpi_15_dp" android:layout_marginBottom="@dimen/factor_mdpi_05_dp" android:layout_weight="0.0">
+                        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/main" android:background="@drawable/buttonsshapes" android:layout_width="match_parent" android:layout_height="@dimen/factor_mdpi_50_dp" app:layout_constraintTop_toBottomOf="@id/textView2">
+                            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit" android:drawableLeft="@drawable/ic_baseline_check_circle_24" android:drawablePadding="@dimen/factor_mdpi_10_dp" android:layout_centerVertical="true" android:fontFamily="@font/poppins_medium" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/formBg" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/parent.contentLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/factor_mdpi_20_dp" android:layout_marginTop="@dimen/factor_mdpi_05_dp" android:layout_marginRight="@dimen/factor_mdpi_20_dp" android:layout_marginBottom="@dimen/factor_mdpi_40_dp">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/swami_charitra_menu" android:scaleType="fitXY" android:adjustViewBounds="true" android:cropToPadding="true" />
+                    <TextView android:textSize="@dimen/factor_mdpi_20_dp" android:gravity="center" android:layout_gravity="center" android:padding="@dimen/factor_mdpi_05_dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:text="श्री स्वामी चरित्र सारामृत" style="@style/viewParent.headerText" />
+                    <include layout="@layout/card_loading_schedule" />
+                    <include layout="@layout/card_cancel_schedule" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

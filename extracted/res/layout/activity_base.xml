@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lyt_header" android:background="@color/white" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/panelIconLeftreverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/img_Home" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24_back" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/colorPrimaryDark" android:ellipsize="marquee" android:gravity="center" android:id="@id/txtHeading" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="Forgot Password" android:singleLine="true" android:layout_toRightOf="@id/panelIconLeftreverse" android:layout_centerInParent="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/poppins_medium" />
+</RelativeLayout>
